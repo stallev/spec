@@ -1,0 +1,28 @@
+.navbar-nav li img{
+  margin-left: 45px;
+}
+.navbar-nav > li > a{
+  padding-right: 45px;
+}
+
+//footer
+.company-nav{  
+  &__wrap{
+  padding-bottom: 25px;
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
+@media only screen and (min-width: 991px){
+  .nav-section__inner-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

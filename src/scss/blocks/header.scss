@@ -1,0 +1,100 @@
+.header{
+  &__personal-wdg{
+		display: flex;
+    width: fit-content;
+	}
+	&__account-link{
+		display: none;
+	}
+	&__cart-dropdown{
+		position: relative;
+	}
+	&__cart-dropdown-header{
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 20px 0 20px 0;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		&:hover{
+			color: #26b;
+		}
+		& span{
+			
+		}
+	}
+	&__cart-dropdown-name,
+	&__cart-dropdown-price{
+		display: none;
+		margin-right: 5px;
+	}
+	&__cart-dropdown-price, &__cart-dropdown-total-count{
+		color: #26b;
+	}
+	&__cart-dropdown-price{
+		margin-right: 20px;
+	}
+	&__cart-dropdown-total-count{
+		position: relative;
+		padding: 4px 8px;
+		text-align: center;
+		border: 2px solid #26b;
+		background-color: #fff;
+		z-index: 12;
+		transition: all .4s ease-in-out;
+		&:hover{
+			background-color: #26b;
+			color: #fff;
+		}
+		&::after{
+			position: absolute;
+			display: block;
+			content: '';
+			width: 16px;
+			height: 9px;
+			top: -10px;
+			transform: translate(-20%,7%);
+			border-radius: 10px 10px 0 0;;
+			border: 2px solid #26b;
+			z-index: -1;
+		}
+	}
+	
+	&__account-link{
+		display: none;
+	}
+}
+.header__cart-dropdown:hover .cart{
+	display: flex;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+@media only screen and (min-width: 991px){
+  .header{
+    &__personal-wdg{
+      position: relative;
+      color: #000;
+    }
+    &__account-link{
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      border-right: 1px solid #222;
+      text-transform: uppercase;
+      & i{
+        display: inline-block;
+        margin-right: 12px;
+        font-size: 1.9rem;
+      }
+      &:hover{
+        color: #26b;
+      }
+      &-text{
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

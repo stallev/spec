@@ -12,7 +12,7 @@
 	<link rel="apple-touch-icon" sizes="57x57" href="img/logo/logo-1.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/logo/logo-2.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/logo/logo-3.png4">
-
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
 
 </head>
 <body>		
@@ -89,7 +90,7 @@
 		<div id="nav-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 nav-section__inner-wrap">
 
 						<a href="#" class="toggle-mnu hidden-lg"><span></span></a>	
 
@@ -112,7 +113,61 @@
 										<a href="contacts.html">Контакты</a>
 									</li>
 								</ul>
-							</nav>																		
+							</nav>	
+							<div class="header__personal-wdg">
+								<a href="#" class="header__account-link">
+									<i class="fas fa-user"></i>
+									<span class="header__account-link-text">login</span>
+								</a>
+								<div class="header__cart-dropdown">
+									<a href="#" class="header__cart-dropdown-header">
+										<span class="header__cart-dropdown-name">корзина /</span>
+										<span class="header__cart-dropdown-price">850 р</span>
+										<span class="header__cart-dropdown-total-count">2</span>
+									</a>
+									<div class="cart">
+										<div class="cart__content-header">
+											<span class="cart__total-header-counts">2 товара</span>
+											<a href="cart.html" class="cart__total-header-counts">корзина</a>
+										</div>
+										<div class="cart__items-list">
+											<div class="cart__item">
+												<div class="cart__item-descr">
+													<h5 class="cart__item-name">Шпатлевка полимерная финишная KNAUF Rotband Pasta Profi белая 18 кг</h5>
+													<div class="cart__item-price-block">
+														<span class="cart__item-count">1</span>
+														<i class="fa fa-times" aria-hidden="true"></i>
+														<span class="cart__item-price">1800 р</span>
+													</div>
+												</div>
+												<figure>
+													<img src="../img/content/thumb-products/product30.jpg" alt="item" class="cart__item-image">
+													<button class="cart__item-drop"></button>
+												</figure>
+											</div>
+											<div class="cart__item">
+												<div class="cart__item-descr">
+													<h5 class="cart__item-name">Шпатлевка гипсовая старт-финиш CERESIT CT 126 белая 20 кг</h5>
+													<div class="cart__item-price-block">
+														<span class="cart__item-count">1</span>
+														<i class="fa fa-times" aria-hidden="true"></i>
+														<span class="cart__item-price">1700 р</span>
+													</div>
+												</div>
+												<figure>
+													<img src="../img/content/thumb-products/product31.jpg" alt="item" class="cart__item-image">
+													<button class="cart__item-drop"></button>
+												</figure>
+											</div>
+										</div>
+										<div class="cart__total">
+											<span class="cart__total-name">Итого:</span>
+											<span class="cart__total-value">3700 р</span>
+										</div>
+										<a href="cart.html" class="action action--cart">оформить</a>
+									</div>
+								</div>          
+							</div>																	
 
 					</div>
 
@@ -2473,9 +2528,26 @@
 					<button type="button">Отправить</button>					
 				</div>
 			</div>
+			<div class="row company-nav__wrap">
+				<div class="col-xs-12">
+					<nav class="company-nav">
+						<ul class="company-nav__list">
+							<li class="company-nav__item">
+								<a href="main-policy.html" class="company-nav__link">Договор публичной оферты</a>
+							</li>
+							<li class="company-nav__item">
+								<a href="delivery-policy.html" class="company-nav__link">Доставка</a>
+							</li>
+							<li class="company-nav__item">
+								<a href="payment-policy.html" class="company-nav__link">Оплата</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</div>
 	</footer>
-
+	
 	<div class="m0 footer-bottom">  
     <div class="container">
       <div class="row">
@@ -2487,7 +2559,6 @@
       </div>
     </div>
   </div>
-	
 	
 	<div class="hidden"></div>
 
