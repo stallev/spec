@@ -43,7 +43,10 @@ function styles() {
     .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(paths.build + 'css/'));
 }
-
+function old() {
+  return gulp.src(paths.src + 'old/**/*.*')
+    .pipe(gulp.dest(paths.build))
+}
 function svgSprite() {
   return gulp.src(paths.src + 'svg/*.svg')
     .pipe(svgmin(function (file) {
@@ -79,8 +82,7 @@ function copyFonts() {
 
 function scriptsVendors() {
   return gulp.src(paths.src + 'js/vendor/*.js')
-    .pipe(concat('vendors.min.js'))
-    .pipe(gulp.dest(paths.build + 'js/'))
+    .pipe(gulp.dest(paths.build + 'js/vendors/'))
 }
 
 function htmls() {
@@ -118,6 +120,7 @@ function serve() {
   browserSync.watch(paths.build + '**/*.*', browserSync.reload);
 }
 
+exports.old = old;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.scriptsVendors = scriptsVendors;
@@ -129,11 +132,11 @@ exports.watch = watch;
 
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, scripts, scriptsVendors, htmls, copyFonts, images)
+  gulp.parallel(old, styles, scripts, scriptsVendors, htmls, copyFonts, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, scripts, scriptsVendors, htmls, copyFonts, images),
+  gulp.parallel(old, styles, scripts, scriptsVendors, htmls, copyFonts, images),
   gulp.parallel(watch, serve)
 ));
