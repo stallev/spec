@@ -1,0 +1,88 @@
+.toggle-mnu {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  z-index: 500;
+}
+.main-mnu.hidden-mnu{
+  left: 0;
+}
+//добавляем кнопку быстого просмотра
+.perf-img{
+  position: relative;
+}
+.perf-item{
+  &__quick-view{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 3px solid #036647;
+    background-color: #036647;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all .3s ease-in;
+    &:hover{
+      background-color: #fff;
+      color: #036647;
+    }
+  }
+  &:hover .perf-item__quick-view{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.perfomance-carusel .owl-dots{
+  top: 322px;
+}
+.make-phone-call a{
+  margin-bottom: 20px;
+}
+.footer__bottom-item{
+  width: fit-content;
+  margin: 0 auto ;
+  margin-bottom: 20px;
+}
+.tovar-text-btn .button-add-to-cart {
+  display: inline-flex;
+  padding: 10px 32px 10px 32px;
+  align-items: center;
+  position: relative;
+  transition: all .3s;
+  background-color: #036647;
+  border: 1px solid #036647;
+  z-index: 3;
+  &:hover{
+    background-color: #fff;
+    color: #036647;
+    border: 1px solid #fff;
+  }
+}
+@media only screen and (min-width: 767px){
+  .perf-item{
+    &__quick-view{
+      padding: 10px 0;
+      border: 2px solid #036647;
+      font-size: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 991px){
+  .make-phone-call a{
+    margin-bottom: 0;
+  }
+  .perf-item{
+    &__quick-view{
+      padding: 15px 0;
+      border: 3px solid #036647;
+      font-size: 14px;
+    }
+  }
+}

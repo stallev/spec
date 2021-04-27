@@ -10,7 +10,7 @@ $(document).ready(function() {
     },
     midClick: true 
   });
-
+	
   $(".home-slider").owlCarousel({
         animateOut: 'fadeOut',
         items : 1,  

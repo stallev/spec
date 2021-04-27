@@ -36,9 +36,12 @@
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.9;
-    @include colorOnHover;
+    transition: color .3s ease-in;
+    &:hover{
+      color: #036647;
+    }
     &--active{
-      color: #26b;
+      color: #036647;
     }
   }
 }

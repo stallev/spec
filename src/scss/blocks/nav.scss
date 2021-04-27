@@ -19,6 +19,12 @@
     margin: 0 20px;
   }
 }
+.nav-section__inner-wrap{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
 @media only screen and (min-width: 991px){
   .nav-section__inner-wrap{
     display: flex;
