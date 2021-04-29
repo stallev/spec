@@ -18,7 +18,7 @@
       display: block;
       content: '\f105';
       right: -18px;
-      top: 55%;
+      top: 45%;
       transform: translate(0, -100%);
       width: 10px;
       height: 10px;
@@ -38,10 +38,10 @@
     line-height: 1.9;
     transition: color .3s ease-in;
     &:hover{
-      color: #036647;
+      color: #f67809;
     }
     &--active{
-      color: #036647;
+      color: #f67809;
     }
   }
 }
@@ -79,7 +79,7 @@
     &__item{
       &::after{
         font-size: 2rem;
-        top: 50%;
+        top: 38%;
       }
     }
     &__link{

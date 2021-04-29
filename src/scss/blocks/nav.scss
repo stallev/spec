@@ -1,8 +1,8 @@
 .navbar-nav li img{
-  margin-left: 45px;
+  margin-left: 22px;
 }
 .navbar-nav > li > a{
-  padding-right: 45px;
+  padding-right: 22px;
 }
 
 //footer
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100%;
+  min-height: 55px;
 }
 @media only screen and (min-width: 991px){
   .nav-section__inner-wrap{

@@ -74,6 +74,9 @@
   font-size: 2.5rem;
   @include colorOnHover;
 }
+.product-quickview__content .perf-text p{
+  min-height: 65px;
+}
 .quickview .product-quickview__content{
   top: 4vh;
   margin-right: -50%;

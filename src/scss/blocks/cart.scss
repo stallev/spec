@@ -154,6 +154,13 @@
 .cart .btn-head a{
   margin-top: 20px;
 }
+.button-action{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
 .footer__mobile-nav-item--cart:hover .cart--footer{
   opacity: 1;
   visibility: visible;
